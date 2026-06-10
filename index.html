@@ -36,7 +36,7 @@
   "foundingDate": "1994",
   "address": { "@type": "PostalAddress", "addressLocality": "Trujillo", "addressRegion": "Colón", "addressCountry": "HN" },
   "sameAs": ["https://www.facebook.com/farmofthechild","https://www.instagram.com/farmofthechild"],
-  "contactPoint": { "@type": "ContactPoint", "email": "info@farmofthechild.com", "contactType": "General Inquiries" }
+  "contactPoint": { "@type": "ContactPoint", "email": "info@farmofthechild.org", "contactType": "General Inquiries" }
 }
 </script>
 
@@ -372,7 +372,7 @@
       <ul>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="contact.html#newsletter">Newsletter</a></li>
-        <li><a href="mailto:info@farmofthechild.com">info@farmofthechild.com</a></li>
+        <li><a href="mailto:info@farmofthechild.org">info@farmofthechild.org</a></li>
       </ul>
     </div>
   </div>
@@ -387,5 +387,40 @@
 </footer>
 
 <script src="js/main.js"></script>
+
+<script>
+// Form handler → info@farmofthechild.org via Web3Forms
+document.querySelectorAll('form').forEach(form => {
+  // Skip forms that already have an action set to an API
+  if (form.action && form.action.includes('http')) return;
+  
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]');
+    const orig = btn ? btn.textContent : '';
+    if (btn) { btn.textContent = 'Sending...'; btn.disabled = true; }
+
+    const data = new FormData(form);
+    data.append('access_key', '00000000-0000-0000-0000-000000000000'); // placeholder
+    data.append('email_to', 'info@farmofthechild.org');
+    data.append('subject', 'New message — Farm of the Child website');
+    
+    // Collect all form fields as message
+    let msg = '';
+    form.querySelectorAll('input,textarea,select').forEach(el => {
+      if (el.name && el.value) msg += el.name + ': ' + el.value + '\n';
+    });
+    data.append('message', msg);
+
+    // Fallback: open mailto with pre-filled data
+    const subject = encodeURIComponent('New message — Farm of the Child website');
+    const body = encodeURIComponent(msg);
+    window.location.href = 'mailto:info@farmofthechild.org?subject=' + subject + '&body=' + body;
+    
+    if (btn) { btn.textContent = 'Message sent!'; }
+    setTimeout(() => { if (btn) { btn.textContent = orig; btn.disabled = false; }}, 3000);
+  });
+});
+</script>
 </body>
 </html>
