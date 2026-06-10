@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── SEO ── -->
+<title>Farm of the Child | Child Sponsorship in Honduras | Finca del Niño</title>
+<meta name="description" content="Farm of the Child supports 20 residential children in Trujillo, Honduras. Sponsor a child for $50–100/month and provide a loving home, education, and healthcare. 30+ years of mission.">
+<meta name="keywords" content="sponsor a child Honduras, child sponsorship Catholic, Finca del Niño Honduras, Honduras charity, nonprofit Honduras children, Farm of the Child donation">
+<link rel="canonical" href="https://farmofthechild.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://farmofthechild.com/">
+<meta property="og:title" content="Farm of the Child | Sponsor a Child in Honduras">
+<meta property="og:description" content="20 children call Finca del Niño home. For $50–100/month, you give a child education, healthcare, and a loving family. 30 years of mission in Trujillo, Honduras.">
+<meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1612564330990-T67Q3A1KM9C7S6HU298K/57111042_10156442029737753_6777873505972125696_o.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Farm of the Child | Sponsor a Child in Honduras">
+<meta name="twitter:description" content="20 children call Finca del Niño home. Sponsor one for $50–100/month.">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Farm of the Child",
+  "alternateName": "Finca del Niño",
+  "url": "https://farmofthechild.com",
+  "logo": "https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1611309677837-9RLC2GZ49DC67Z1YUY84/farm-logo-160p-transparent-1.png",
+  "description": "A Catholic nonprofit supporting Finca del Niño, a residential home for 20 vulnerable children in Trujillo, Honduras, operating for over 30 years.",
+  "foundingDate": "1994",
+  "address": { "@type": "PostalAddress", "addressLocality": "Trujillo", "addressRegion": "Colón", "addressCountry": "HN" },
+  "sameAs": ["https://www.facebook.com/farmofthechild","https://www.instagram.com/farmofthechild"],
+  "contactPoint": { "@type": "ContactPoint", "email": "info@farmofthechild.com", "contactType": "General Inquiries" }
+}
+</script>
+
+<!-- Google Tag Manager placeholder -->
+<!-- GTM-XXXXXXX -->
+
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* ── PAGE-SPECIFIC ── */
+.mission-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
+.mission-visual { background:linear-gradient(135deg,var(--green-dark),var(--green)); border-radius:16px; padding:52px 40px; color:#fff; text-align:center; }
+.mission-visual .cross { font-size:52px; color:var(--gold-light); margin-bottom:16px; }
+.mission-visual p { font-size:1rem; color:rgba(255,255,255,.85); line-height:1.7; }
+.mission-visual strong { color:var(--gold-light); }
+.founders { margin-top:24px; padding-top:20px; border-top:1px solid rgba(255,255,255,.2); font-family:-apple-system,sans-serif; font-size:12px; color:rgba(255,255,255,.55); text-transform:uppercase; letter-spacing:1px; }
+.quote-block { background:var(--cream); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 8px 8px 0; margin:24px 0; font-style:italic; font-size:1.05rem; color:var(--green-dark); }
+.quote-block cite { display:block; font-style:normal; font-family:-apple-system,sans-serif; font-size:12px; color:var(--text-soft); margin-top:8px; font-weight:600; text-transform:uppercase; letter-spacing:1px; }
+
+.ways-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.way-card { background:#fff; border-radius:var(--radius); padding:32px 28px; box-shadow:var(--shadow); transition:transform .22s, box-shadow .22s; border-top:3px solid var(--green-pale); }
+.way-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-lg); border-top-color:var(--gold); }
+.way-card .icon { font-size:2.2rem; margin-bottom:16px; }
+.way-card h3 { font-size:1.1rem; font-weight:700; color:var(--green-dark); margin-bottom:10px; }
+.way-card p { font-family:-apple-system,sans-serif; font-size:14px; color:var(--text-soft); line-height:1.6; margin-bottom:18px; }
+.way-card a { font-family:-apple-system,sans-serif; font-size:13px; font-weight:700; color:var(--green); border-bottom:2px solid var(--green-pale); padding-bottom:2px; transition:border-color .2s; }
+.way-card a:hover { border-color:var(--green); }
+
+.donate-section { background:var(--cream); }
+.donate-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.donate-card { background:#fff; border-radius:var(--radius); padding:36px 28px; text-align:center; box-shadow:var(--shadow); position:relative; }
+.donate-card.featured { border:2px solid var(--gold); }
+.donate-card.featured::before { content:'Most Popular'; position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:var(--gold); color:var(--green-dark); font-family:-apple-system,sans-serif; font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:4px 14px; border-radius:20px; white-space:nowrap; }
+.donate-card .amount { font-size:2.6rem; font-weight:800; color:var(--green-dark); line-height:1; margin-bottom:6px; }
+.donate-card .period { font-family:-apple-system,sans-serif; font-size:12px; color:var(--text-muted); margin-bottom:20px; }
+.donate-card h4 { font-size:1rem; font-weight:700; color:var(--green-dark); margin-bottom:10px; }
+.donate-card p { font-family:-apple-system,sans-serif; font-size:13px; color:var(--text-soft); line-height:1.6; margin-bottom:24px; }
+
+@media (max-width:900px) {
+  .mission-grid { grid-template-columns:1fr; gap:40px; }
+  .ways-grid { grid-template-columns:1fr 1fr; }
+  .donate-grid { grid-template-columns:1fr; max-width:400px; margin:0 auto; }
+}
+@media (max-width:600px) {
+  .ways-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1611309677837-9RLC2GZ49DC67Z1YUY84/farm-logo-160p-transparent-1.png" alt="Farm of the Child">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="about.html">About Us</a>
+        <div class="dropdown">
+          <a href="about.html#story">Our Story</a>
+          <a href="about.html#founders">Founders</a>
+          <a href="about.html#team">Our Team</a>
+          <a href="about.html#financial">Financial Info</a>
+        </div>
+      </li>
+      <li><a href="programs.html">What We Do</a>
+        <div class="dropdown">
+          <a href="programs.html#focus">Our Focus</a>
+          <a href="programs.html#daily-life">A Typical Day</a>
+          <a href="programs.html#community">Community Impact</a>
+        </div>
+      </li>
+      <li><a href="sponsor.html">Sponsor a Child</a></li>
+      <li><a href="service.html">Serve With Us</a>
+        <div class="dropdown">
+          <a href="service.html#missioner">Missioner Program</a>
+          <a href="service.html#trips">Immersion Trips</a>
+          <a href="service.html#apply">Apply Now</a>
+          <a href="service.html#faq">FAQ</a>
+        </div>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="donate.html" class="nav-cta">Donate Today</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <div class="m-section">About Us</div>
+  <a href="about.html#story">Our Story</a>
+  <a href="about.html#team">Our Team</a>
+  <a href="about.html#financial">Financial Information</a>
+  <div class="m-section">What We Do</div>
+  <a href="programs.html#focus">Our Focus</a>
+  <a href="programs.html#daily-life">A Typical Day</a>
+  <div class="m-section">Get Involved</div>
+  <a href="sponsor.html">Sponsor a Child</a>
+  <a href="donate.html">Donate</a>
+  <a href="service.html">Serve With Us</a>
+  <a href="contact.html">Contact</a>
+  <a href="donate.html" class="m-cta">Donate Today →</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+  <div class="hero-bg" style="background-image:url('https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1612564330990-T67Q3A1KM9C7S6HU298K/57111042_10156442029737753_6777873505972125696_o.jpg');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content" data-reveal>
+    <div class="hero-eyebrow">✦ Trujillo, Honduras · 30+ Years of Mission</div>
+    <h1>A home where every child<br><em>belongs</em></h1>
+    <p class="hero-sub">Farm of the Child supports Finca del Niño — a residential home where 20 vulnerable children find family, healing, education, and hope on the Garífuna coast of Honduras.</p>
+    <p class="hero-quote">"Modeled on the Holy Family — educating, protecting, and promoting healing for vulnerable children."</p>
+    <div class="hero-btns">
+      <a href="sponsor.html" class="btn btn-primary btn-lg">Sponsor a Child →</a>
+      <a href="about.html" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,.6);color:#fff;">Our Story</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="n">20</div><div class="l">Resident Children</div></div>
+      <div class="stat"><div class="n">30+</div><div class="l">Years of Mission</div></div>
+      <div class="stat"><div class="n">800+</div><div class="l">Community Members</div></div>
+      <div class="stat"><div class="n">$50</div><div class="l">Sponsors One Child/Mo</div></div>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- ── STATS BAND ── -->
+<div class="stats-band">
+  <div class="inner">
+    <div class="stat-item" data-reveal data-reveal-delay="1">
+      <div class="stat-num"><span data-count="30"></span></div>
+      <div class="stat-label">Years Serving Honduras</div>
+    </div>
+    <div class="stat-item" data-reveal data-reveal-delay="2">
+      <div class="stat-num"><span data-count="20"></span></div>
+      <div class="stat-label">Children in Our Home</div>
+    </div>
+    <div class="stat-item" data-reveal data-reveal-delay="3">
+      <div class="stat-num"><span data-count="1500" data-suffix="+"></span></div>
+      <div class="stat-label">Clinic Patients / Year</div>
+    </div>
+    <div class="stat-item" data-reveal data-reveal-delay="4">
+      <div class="stat-num"><span data-count="120"></span></div>
+      <div class="stat-label">Children in Our Schools</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── MISSION ── -->
+<section style="background:#fff;">
+  <div class="inner">
+    <div class="mission-grid">
+      <div data-reveal="left">
+        <div class="eyebrow">Who We Are</div>
+        <h2 class="section-title">Family, faith, and a future — in Trujillo, Honduras</h2>
+        <p style="font-size:1.05rem;color:var(--text-soft);line-height:1.75;margin-bottom:16px">Farm of the Child USA is a Catholic non-profit that supports Finca del Niño-Honduras — a mission modeled on the Holy Family that <strong>educates, protects, and promotes healing</strong> for vulnerable children and families in the community of Trujillo, on Honduras's Garífuna coast.</p>
+        <div class="quote-block">
+          "The children are not orphans — they are family."
+          <cite>— Vincent Pescatore, Founder</cite>
+        </div>
+        <p style="font-family:-apple-system,sans-serif;font-size:14px;color:var(--text-soft);line-height:1.7;">Founded over 30 years ago by Vincent and Zulena Pescatore, Finca del Niño has grown into a thriving community where children, lay missionaries, and local families come together around a shared mission of love.</p>
+        <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="about.html" class="btn btn-green">Our Full Story →</a>
+          <a href="programs.html" class="btn btn-outline">What We Do →</a>
+        </div>
+      </div>
+      <div data-reveal="right">
+        <div class="mission-visual">
+          <div class="cross">✝</div>
+          <p>For <strong>over 30 years</strong>, Finca del Niño has been a beacon on the Garífuna coast — providing 20 resident children with a loving home staffed by <strong>lay missionaries</strong>, access to healthcare, spiritual formation, education, and daily living necessities.</p>
+          <div class="founders">Founded by Vincent &amp; Zulena Pescatore · Trujillo, Honduras</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW TO HELP ── -->
+<section style="background:var(--cream);">
+  <div class="inner">
+    <div class="eyebrow" data-reveal>Get Involved</div>
+    <h2 class="section-title" data-reveal>There's a place for everyone</h2>
+    <p class="section-sub" data-reveal>Whether you give financially, serve in person, or simply stay connected — you become part of the Farm of the Child family.</p>
+    <div class="ways-grid">
+      <div class="way-card" data-reveal data-reveal-delay="1">
+        <div class="icon">💛</div>
+        <h3>Sponsor a Child</h3>
+        <p>$50–100/month gives a child a full seat at the family table — meals, education, healthcare, and belonging.</p>
+        <a href="sponsor.html">Meet the children →</a>
+      </div>
+      <div class="way-card" data-reveal data-reveal-delay="2">
+        <div class="icon">🤲</div>
+        <h3>Make a Donation</h3>
+        <p>One-time or recurring gifts fund the Finca's clinic, school, and daily operations. Every dollar reaches the children.</p>
+        <a href="donate.html">Donate now →</a>
+      </div>
+      <div class="way-card" data-reveal data-reveal-delay="3">
+        <div class="icon">🏛️</div>
+        <h3>Sponsor a Program</h3>
+        <p>Support our school, clinic, or missionary program directly. Every sponsorship creates lasting community impact.</p>
+        <a href="donate.html#programs">Support a Program →</a>
+      </div>
+      <div class="way-card" data-reveal data-reveal-delay="4">
+        <div class="icon">✈️</div>
+        <h3>Immersion Trip</h3>
+        <p>Come and see. Short-term trips let you experience the mission in Trujillo firsthand and serve alongside the children.</p>
+        <a href="service.html#trips">Plan a Visit →</a>
+      </div>
+      <div class="way-card" data-reveal data-reveal-delay="5">
+        <div class="icon">🌿</div>
+        <h3>Serve as a Missionary</h3>
+        <p>Give a year of your life to the Farm. Lay missionaries are welcomed year-round to live and serve with the children.</p>
+        <a href="service.html#apply">Apply Now →</a>
+      </div>
+      <div class="way-card" data-reveal data-reveal-delay="6">
+        <div class="icon">📬</div>
+        <h3>Stay Connected</h3>
+        <p>Subscribe to our newsletter for updates, stories, and reflections from the Finca — straight to your inbox each month.</p>
+        <a href="contact.html#newsletter">Subscribe Free →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SPONSOR PREVIEW ── -->
+<section style="background:#fff;">
+  <div class="inner">
+    <div class="eyebrow" data-reveal>Sponsor a Child</div>
+    <h2 class="section-title" data-reveal>16 children are waiting for a sponsor</h2>
+    <p class="section-sub" data-reveal>Each child at Finca del Niño has a story, a personality, and a dream. Your $50–100/month provides everything they need to thrive.</p>
+    <div class="children-grid">
+
+      <div class="child-card" data-reveal data-reveal-delay="1">
+        <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/aa254751-2c71-4a95-9179-f012032bae0e/PHOTO-2025-11-07-09-45-58+2.jpg" alt="Child J" loading="lazy"></div>
+        <div class="child-info"><div class="child-header"><span class="child-initial">J.</span><span class="child-age">3 yrs · Male</span></div><p class="child-desc"><strong>Interests:</strong> Exploring the Finca. The youngest — loves attention and playing at the campo.</p><a href="sponsor.html" class="child-btn">Become J's Sponsor →</a></div>
+      </div>
+
+      <div class="child-card" data-reveal data-reveal-delay="2">
+        <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1655310627806-58X2ISCBNE94JKYLPDWJ/Rixy_Mabel_Mendoza%2B_Varela2022.jpg" alt="Child R" loading="lazy"></div>
+        <div class="child-info"><div class="child-header"><span class="child-initial">R.</span><span class="child-age">11 yrs · Female</span></div><p class="child-desc"><strong>Interests:</strong> Playing, coloring and dolls. Loves the Frozen soundtrack!</p><a href="sponsor.html" class="child-btn">Become R's Sponsor →</a></div>
+      </div>
+
+      <div class="child-card" data-reveal data-reveal-delay="3">
+        <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1655318408922-DIJX3OLE0EXZJB59FWZA/Dunia_Mendoza_Varela.jpg" alt="Child D" loading="lazy"></div>
+        <div class="child-info"><div class="child-header"><span class="child-initial">D.</span><span class="child-age">9 yrs · Female</span></div><p class="child-desc"><strong>Interests:</strong> Coloring and singing. Favorite subject: Art.</p><a href="sponsor.html" class="child-btn">Become D's Sponsor →</a></div>
+      </div>
+
+      <div class="child-card" data-reveal data-reveal-delay="4">
+        <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/f12ac218-b6fa-44f2-afa7-1aaaecf8c1e4/PHOTO-2025-12-05-17-45-44.jpg" alt="Child I" loading="lazy"></div>
+        <div class="child-info"><div class="child-header"><span class="child-initial">I.</span><span class="child-age">12 yrs · Female</span></div><p class="child-desc"><strong>Interests:</strong> Sports and nature. Loves movies and long conversations.</p><a href="sponsor.html" class="child-btn">Become I's Sponsor →</a></div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:40px;" data-reveal>
+      <a href="sponsor.html" class="btn btn-primary btn-lg">Meet All 16 Children →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── DONATE CTA ── -->
+<section class="donate-section">
+  <div class="inner">
+    <div class="eyebrow" data-reveal>Give Today</div>
+    <h2 class="section-title" data-reveal>Your gift changes a life — starting now</h2>
+    <p class="section-sub" data-reveal>100% of donations support the children and programs at Finca del Niño. Farm of the Child USA is a 501(c)(3) — your gift is tax-deductible.</p>
+    <div class="donate-grid">
+      <div class="donate-card" data-reveal data-reveal-delay="1">
+        <div class="amount">$25</div>
+        <div class="period">one-time gift</div>
+        <h4>A Week of Meals</h4>
+        <p>Feeds one child for a full week with nutritious, home-cooked meals prepared at the Finca.</p>
+        <a href="donate.html" class="btn btn-outline" style="width:100%;display:block;text-align:center;">Give $25 →</a>
+      </div>
+      <div class="donate-card featured" data-reveal data-reveal-delay="2">
+        <div class="amount">$50</div>
+        <div class="period">per month</div>
+        <h4>Full Child Sponsorship</h4>
+        <p>Provides one child with meals, education, healthcare, and a loving home for an entire month.</p>
+        <a href="sponsor.html" class="btn btn-primary" style="width:100%;display:block;text-align:center;">Sponsor a Child →</a>
+      </div>
+      <div class="donate-card" data-reveal data-reveal-delay="3">
+        <div class="amount">$500</div>
+        <div class="period">one-time gift</div>
+        <h4>Program Support</h4>
+        <p>Funds the Finca's school, clinic, or missionary program for a month — creating lasting community impact.</p>
+        <a href="donate.html#programs" class="btn btn-green" style="width:100%;display:block;text-align:center;">Support a Program →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BAND ── -->
+<div class="cta-band">
+  <h2 data-reveal>Ready to make a difference?</h2>
+  <p data-reveal>20 children are waiting. Your sponsorship gives them everything — a home, a family, and a future.</p>
+  <div class="btns" data-reveal>
+    <a href="sponsor.html" class="btn btn-primary btn-lg">Sponsor a Child</a>
+    <a href="donate.html" class="btn btn-white btn-lg">Make a Donation</a>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1611309677837-9RLC2GZ49DC67Z1YUY84/farm-logo-160p-transparent-1.png" alt="Farm of the Child"></div>
+      <p class="footer-about">A Catholic non-profit supporting Finca del Niño-Honduras — educating, protecting, and promoting healing for vulnerable children in Trujillo since 1994.</p>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="about.html#story">Our Story</a></li>
+        <li><a href="about.html#founders">Founders</a></li>
+        <li><a href="about.html#team">Our Team</a></li>
+        <li><a href="about.html#financial">Financials</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get Involved</h4>
+      <ul>
+        <li><a href="sponsor.html">Sponsor a Child</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="service.html">Serve With Us</a></li>
+        <li><a href="service.html#trips">Immersion Trips</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html#newsletter">Newsletter</a></li>
+        <li><a href="mailto:info@farmofthechild.com">info@farmofthechild.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Farm of the Child USA — 501(c)(3) · All donations are tax-deductible.</p>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/farmofthechild" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/farmofthechild" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/farmofthechild" target="_blank">YouTube</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
