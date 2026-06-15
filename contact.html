@@ -6,7 +6,6 @@
 <title>Contact Us | Farm of the Child — Honduras Children Charity</title>
 <meta name="description" content="Contact Farm of the Child about child sponsorship, donations, missionary service, or immersion trips to Finca del Niño in Trujillo, Honduras. We respond within 2 business days.">
 <meta name="keywords" content="contact Farm of the Child, Honduras nonprofit contact, sponsor child Honduras inquiry, missionary application Honduras">
-<meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://farmofthechild.com/contact.html">
 <meta property="og:title" content="Contact Us | Farm of the Child — Honduras Children Charity">
 <meta property="og:description" content="Contact Farm of the Child about child sponsorship, donations, missionary service, or immersion trips to Finca del Niño in Trujillo, Honduras. We respond within 2 business days.">
@@ -132,7 +131,11 @@
       <div data-reveal="right">
         <div style="background:var(--cream);border-radius:16px;padding:40px 36px;box-shadow:var(--shadow);">
           <h3 style="font-size:1.2rem;font-weight:700;color:var(--green-dark);margin-bottom:24px;">Send us a message</h3>
-          <form action="mailto:info@farmofthechild.org" method="GET" style="display:flex;flex-direction:column;gap:16px;">
+          <form action="https://formsubmit.co/info@farmofthechild.org" method="POST" style="display:flex;flex-direction:column;gap:16px;">
+            <input type="hidden" name="_subject" value="New message — Farm of the Child">
+            <input type="hidden" name="_next" value="https://franciaxoles.github.io/fotc-preview/contact.html?sent=1">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
             <div>
               <label style="font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;">Full Name</label>
               <input type="text" name="name" placeholder="Your name" style="width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:7px;font-family:-apple-system,sans-serif;font-size:14px;background:#fff;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--line)'">
@@ -153,7 +156,7 @@
             </div>
             <div>
               <label style="font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;">Message</label>
-              <textarea name="body" rows="4" placeholder="Tell us how we can help..." style="width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:7px;font-family:-apple-system,sans-serif;font-size:14px;background:#fff;outline:none;resize:vertical;transition:border-color .2s;" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--line)'"></textarea>
+              <textarea name="message" rows="4" placeholder="Tell us how we can help..." style="width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:7px;font-family:-apple-system,sans-serif;font-size:14px;background:#fff;outline:none;resize:vertical;transition:border-color .2s;" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--line)'"></textarea>
             </div>
             <button type="submit" class="btn btn-green" style="width:100%;font-size:14px;padding:14px;">Send Message →</button>
           </form>
@@ -197,40 +200,5 @@
   </div>
 </footer>
 <script src="js/main.js"></script>
-
-<script>
-// Form handler → info@farmofthechild.org via Web3Forms
-document.querySelectorAll('form').forEach(form => {
-  // Skip forms that already have an action set to an API
-  if (form.action && form.action.includes('http')) return;
-  
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const orig = btn ? btn.textContent : '';
-    if (btn) { btn.textContent = 'Sending...'; btn.disabled = true; }
-
-    const data = new FormData(form);
-    data.append('access_key', '00000000-0000-0000-0000-000000000000'); // placeholder
-    data.append('email_to', 'info@farmofthechild.org');
-    data.append('subject', 'New message — Farm of the Child website');
-    
-    // Collect all form fields as message
-    let msg = '';
-    form.querySelectorAll('input,textarea,select').forEach(el => {
-      if (el.name && el.value) msg += el.name + ': ' + el.value + '\n';
-    });
-    data.append('message', msg);
-
-    // Fallback: open mailto with pre-filled data
-    const subject = encodeURIComponent('New message — Farm of the Child website');
-    const body = encodeURIComponent(msg);
-    window.location.href = 'mailto:info@farmofthechild.org?subject=' + subject + '&body=' + body;
-    
-    if (btn) { btn.textContent = 'Message sent!'; }
-    setTimeout(() => { if (btn) { btn.textContent = orig; btn.disabled = false; }}, 3000);
-  });
-});
-</script>
 </body>
 </html>
