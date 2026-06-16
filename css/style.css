@@ -283,6 +283,23 @@ footer {
 .child-btn { display: block; text-align: center; background: var(--green); color: #fff; padding: 10px; border-radius: 7px; font-family: -apple-system, sans-serif; font-size: 13px; font-weight: 700; transition: background .2s, transform .2s; }
 .child-btn:hover { background: var(--green-light); transform: translateY(-1px); }
 
+/* ── LANGUAGE SELECTOR ── */
+.lang-switcher {
+  display: flex; align-items: center; gap: 2px;
+  margin-left: 16px; padding-left: 16px;
+  border-left: 1px solid var(--line);
+}
+.lang-btn {
+  font-family: -apple-system, sans-serif;
+  font-size: 12px; font-weight: 700;
+  padding: 5px 10px; border-radius: 5px;
+  border: none; background: none;
+  color: var(--text-muted); cursor: pointer;
+  transition: all .2s; letter-spacing: 0.5px;
+}
+.lang-btn:hover { color: var(--green); background: var(--green-pale); }
+.lang-btn.active { background: var(--green); color: #fff; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 960px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
