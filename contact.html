@@ -87,9 +87,9 @@
   <div class="hero-bg" style="background-image:url('https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1612564330990-T67Q3A1KM9C7S6HU298K/57111042_10156442029737753_6777873505972125696_o.jpg');"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content" data-reveal>
-    <div class="hero-eyebrow">Get in Touch</div>
-    <h1>We'd love to hear from you</h1>
-    <p>Questions about sponsorship, service, or donations — our team responds within a few business days.</p>
+    <div class="hero-eyebrow" data-i18n="con.hero.eyebrow">Get in Touch</div>
+    <h1 data-i18n="con.hero.h1">We'd love to hear from you</h1>
+    <p data-i18n="con.hero.sub">Questions about sponsorship, service, or donations — our team responds within a few business days.</p>
   </div>
 </section>
 
@@ -127,42 +127,42 @@
           </div>
         </div>
         <div id="newsletter" style="background:var(--green-pale);border-radius:12px;padding:28px;">
-          <h4 style="font-size:1rem;font-weight:700;color:var(--green-dark);margin-bottom:8px;">📬 Monthly Newsletter</h4>
+          <h4 style="font-size:1rem;font-weight:700;color:var(--green-dark);margin-bottom:8px;"><span data-i18n="con.newsletter.title">📬 Monthly Newsletter</span></h4>
           <p style="font-family:-apple-system,sans-serif;font-size:13px;color:var(--text-soft);line-height:1.6;margin-bottom:16px;">Stories, updates, and reflections from the Finca — straight to your inbox each month. Free, no spam.</p>
-          <a href="mailto:info@farmofthechild.org?subject=Newsletter%20Signup" class="btn btn-green" style="width:100%;display:block;text-align:center;">Subscribe to Newsletter →</a>
+          <a href="mailto:info@farmofthechild.org?subject=Newsletter%20Signup" class="btn btn-green" style="width:100%;display:block;text-align:center;"><span data-i18n="con.newsletter.btn">Subscribe to Newsletter →</span></a>
         </div>
       </div>
       <div data-reveal="right">
         <div style="background:var(--cream);border-radius:16px;padding:40px 36px;box-shadow:var(--shadow);">
-          <h3 style="font-size:1.2rem;font-weight:700;color:var(--green-dark);margin-bottom:24px;">Send us a message</h3>
+          <h3 style="font-size:1.2rem;font-weight:700;color:var(--green-dark);margin-bottom:24px;"><span data-i18n="con.form.title">Send us a message</span></h3>
           <form action="https://formsubmit.co/info@farmofthechild.org" method="POST" style="display:flex;flex-direction:column;gap:16px;">
             <input type="hidden" name="_subject" value="New message — Farm of the Child">
             <input type="hidden" name="_next" value="https://franciaxoles.github.io/fotc-preview/contact.html?sent=1">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <div>
-              <label style="font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;">Full Name</label>
+              <label style="font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;"><span data-i18n="con.form.name">Full Name</span></label>
               <input type="text" name="name" placeholder="Your name" style="width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:7px;font-family:-apple-system,sans-serif;font-size:14px;background:#fff;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--line)'">
             </div>
             <div>
-              <label style="font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;">Email Address</label>
+              <label style="font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;"><span data-i18n="con.form.email">Email Address</span></label>
               <input type="email" name="email" placeholder="your@email.com" style="width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:7px;font-family:-apple-system,sans-serif;font-size:14px;background:#fff;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--line)'">
             </div>
             <div>
-              <label style="font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;">I'm interested in</label>
+              <label style="font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;"  ><span data-i18n="con.form.interest">I'm interested in</span></label>
               <select name="subject" style="width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:7px;font-family:-apple-system,sans-serif;font-size:14px;background:#fff;outline:none;appearance:none;">
-                <option>Child Sponsorship</option>
-                <option>Making a Donation</option>
-                <option>Missionary Service</option>
-                <option>Immersion Trip</option>
-                <option>General Information</option>
+                <option><span data-i18n="con.form.opt1">Child Sponsorship</span></option>
+                <option><span data-i18n="con.form.opt2">Making a Donation</span></option>
+                <option><span data-i18n="con.form.opt3">Missionary Service</span></option>
+                <option><span data-i18n="con.form.opt4">Immersion Trip</span></option>
+                <option><span data-i18n="con.form.opt5">General Information</span></option>
               </select>
             </div>
             <div>
-              <label style="font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;">Message</label>
+              <label style="font-family:-apple-system,sans-serif;font-size:12px;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;"><span data-i18n="con.form.msg">Message</span></label>
               <textarea name="message" rows="4" placeholder="Tell us how we can help..." style="width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:7px;font-family:-apple-system,sans-serif;font-size:14px;background:#fff;outline:none;resize:vertical;transition:border-color .2s;" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--line)'"></textarea>
             </div>
-            <button type="submit" class="btn btn-green" style="width:100%;font-size:14px;padding:14px;">Send Message →</button>
+            <button type="submit" class="btn btn-green" style="width:100%;font-size:14px;padding:14px;"><span data-i18n="con.form.btn">Send Message →</span></button>
           </form>
         </div>
       </div>

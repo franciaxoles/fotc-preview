@@ -137,6 +137,8 @@ const TRANSLATIONS = {
     'about.team.title':   'Lay missionaries living the mission',
     'about.fin.eyebrow':  'Transparency',
     'about.fin.title':    'Financial Accountability',
+    'about.cta.title':    'Be part of the story',
+    'about.cta.sub':      'Your sponsorship or donation writes the next chapter for a child in Trujillo.',
 
     /* ── PROGRAMS PAGE ── */
     'prog.hero.eyebrow':  'What We Do',
@@ -148,6 +150,8 @@ const TRANSLATIONS = {
     'prog.day.title':     'Morning to night — a day at the Finca',
     'prog.com.eyebrow':   'Community Impact',
     'prog.com.title':     "Beyond the Finca — Trujillo's Garífuna coast",
+    'prog.cta.title':     'See the mission in person',
+    'prog.cta.sub':       'Join an immersion trip and experience Finca del Niño firsthand.',
 
     /* ── SPONSOR PAGE ── */
     'spon.hero.eyebrow':  'Sponsor a Child',
@@ -158,16 +162,36 @@ const TRANSLATIONS = {
     'spon.meet.eyebrow':  'Meet the Children',
     'spon.meet.title':    'Children currently in need of sponsorship',
     'spon.meet.sub':      'To maintain our children\'s privacy, only first initials are used publicly. Full profiles and photos are shared with sponsors upon confirmation of sponsorship.',
+    'spon.cta.title':     'One child. One sponsor. One life changed.',
+    'spon.cta.sub':       '$50/month — less than $2 a day — gives a child everything they need to thrive.',
 
     /* ── DONATE PAGE ── */
     'don.hero.eyebrow':   'Give Today',
     'don.hero.h1':        'Your gift changes a life — starting now',
     'don.hero.sub':       '100% of your donation supports the children and programs at Finca del Niño. All gifts are tax-deductible.',
+    'don.ways.eyebrow':   'All Ways to Give',
+    'don.ways.title':     'Every gift — in every form — makes a difference',
+    'don.online.title':   'Give Online',
+    'don.monthly.title':  'Monthly Contribution',
+    'don.check.title':    'Gift by Check',
+    'don.inkind.title':   'In-Kind Gifts',
+    'don.stock.title':    'Gift of Stock',
+    'don.ira.title':      'IRA / Retirement Account (RMD)',
+    'don.legacy.title':   'Legacy Gift / Bequest',
+    'don.prayer.title':   'Gift of Prayer',
 
     /* ── SERVICE PAGE ── */
     'srv.hero.eyebrow':   'Serve With Us',
     'srv.hero.h1':        'Give a year. Change a life — including your own.',
     'srv.hero.sub':       'Lay missionaries from around the world come to Trujillo to live, serve, and grow alongside the children of Finca del Niño.',
+    'srv.mis.eyebrow':    'Missioner Program',
+    'srv.mis.title':      'Lay Missionary Service — One year in Honduras',
+    'srv.trips.eyebrow':  'Immersion Trips',
+    'srv.trips.title':    'Come and see — short-term immersion trips',
+    'srv.apply.eyebrow':  'Apply',
+    'srv.apply.title':    'Ready to serve?',
+    'srv.faq.eyebrow':    'FAQ',
+    'srv.faq.title':      'Frequently Asked Questions',
 
     /* ── CONTACT PAGE ── */
     'con.hero.eyebrow':   'Get in Touch',
@@ -321,6 +345,8 @@ const TRANSLATIONS = {
     'about.team.title':   'Misioneros laicos viviendo la misión',
     'about.fin.eyebrow':  'Transparencia',
     'about.fin.title':    'Rendición de Cuentas Financiera',
+    'about.cta.title':    'Sé parte de la historia',
+    'about.cta.sub':      'Tu patrocinio o donativo escribe el siguiente capítulo para un niño en Trujillo.',
 
     /* ── PROGRAMS PAGE ── */
     'prog.hero.eyebrow':  'Qué Hacemos',
@@ -332,6 +358,8 @@ const TRANSLATIONS = {
     'prog.day.title':     'De la mañana a la noche — un día en la Finca',
     'prog.com.eyebrow':   'Impacto Comunitario',
     'prog.com.title':     'Más allá de la Finca — la costa Garífuna de Trujillo',
+    'prog.cta.title':     'Conoce la misión en persona',
+    'prog.cta.sub':       'Únete a un viaje de inmersión y vive Finca del Niño de primera mano.',
 
     /* ── SPONSOR PAGE ── */
     'spon.hero.eyebrow':  'Apadrinar un Niño',
@@ -342,16 +370,36 @@ const TRANSLATIONS = {
     'spon.meet.eyebrow':  'Conoce a los Niños',
     'spon.meet.title':    'Niños que necesitan un padrino',
     'spon.meet.sub':      'Para proteger la privacidad de los niños, solo se usan iniciales públicamente. Los perfiles completos y fotos se comparten con los padrinos al confirmar el patrocinio.',
+    'spon.cta.title':     'Un niño. Un padrino. Una vida cambiada.',
+    'spon.cta.sub':       '$50 al mes — menos de $2 al día — le da a un niño todo lo que necesita para florecer.',
 
     /* ── DONATE PAGE ── */
     'don.hero.eyebrow':   'Dona Hoy',
     'don.hero.h1':        'Tu donativo cambia una vida — empezando ahora',
     'don.hero.sub':       'El 100% de tu donación apoya a los niños y programas de Finca del Niño. Todos los donativos son deducibles de impuestos.',
+    'don.ways.eyebrow':   'Todas las Formas de Dar',
+    'don.ways.title':     'Cada donativo — en cualquier forma — hace la diferencia',
+    'don.online.title':   'Donar en Línea',
+    'don.monthly.title':  'Contribución Mensual',
+    'don.check.title':    'Donativo por Cheque',
+    'don.inkind.title':   'Donaciones en Especie',
+    'don.stock.title':    'Donativo de Acciones',
+    'don.ira.title':      'IRA / Cuenta de Retiro (RMD)',
+    'don.legacy.title':   'Legado / Herencia',
+    'don.prayer.title':   'Donativo de Oración',
 
     /* ── SERVICE PAGE ── */
     'srv.hero.eyebrow':   'Sirve Con Nosotros',
     'srv.hero.h1':        'Dedica un año. Cambia una vida — incluyendo la tuya.',
     'srv.hero.sub':       'Misioneros laicos de todo el mundo vienen a Trujillo para vivir, servir y crecer junto a los niños de Finca del Niño.',
+    'srv.mis.eyebrow':    'Programa Misionero',
+    'srv.mis.title':      'Servicio Misionero Laico — Un año en Honduras',
+    'srv.trips.eyebrow':  'Viajes de Inmersión',
+    'srv.trips.title':    'Ven y mira — viajes de inmersión de corto plazo',
+    'srv.apply.eyebrow':  'Aplica',
+    'srv.apply.title':    '¿Listo para servir?',
+    'srv.faq.eyebrow':    'Preguntas Frecuentes',
+    'srv.faq.title':      'Preguntas Frecuentes',
 
     /* ── CONTACT PAGE ── */
     'con.hero.eyebrow':   'Contáctanos',

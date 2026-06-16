@@ -17,6 +17,14 @@
 </script>
 <link rel="stylesheet" href="css/style.css">
 <style>
+.page-hero{min-height:52vh;display:flex;align-items:center;padding:calc(var(--nav-h)+80px) 5% 80px;position:relative;overflow:hidden;}
+.page-hero .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-attachment:fixed;}
+.page-hero .hero-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(28,68,39,.88) 0%,rgba(46,107,62,.78) 100%);}
+.page-hero .hero-content{position:relative;z-index:2;}
+.page-hero h1{font-size:clamp(2rem,4vw,3.2rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:14px;}
+.page-hero p{font-size:1.05rem;color:rgba(255,255,255,.85);max-width:580px;line-height:1.7;}
+.hero-eyebrow{display:inline-block;background:rgba(255,255,255,.15);color:var(--gold-light);font-family:-apple-system,sans-serif;font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;padding:6px 16px;border-radius:30px;margin-bottom:20px;border:1px solid rgba(255,255,255,.2);}
+@media(max-width:960px){.page-hero .hero-bg{background-attachment:scroll;}}
 @media(max-width:700px){.children-grid{grid-template-columns:repeat(2,1fr);gap:16px;}}
 </style>
 </head>
@@ -82,16 +90,16 @@
   <div class="hero-bg" style="background-image:url('https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1612564330990-T67Q3A1KM9C7S6HU298K/57111042_10156442029737753_6777873505972125696_o.jpg');"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content" data-reveal>
-    <div class="hero-eyebrow">Sponsor a Child</div>
-    <h1>16 children are waiting for a sponsor</h1>
-    <p>For $50–100/month, you provide a child with a loving home, education, healthcare, and belonging. You'll receive a photo, a letter, and personal updates.</p>
+    <div class="hero-eyebrow" data-i18n="spon.hero.eyebrow">Sponsor a Child</div>
+    <h1 data-i18n="spon.hero.h1">16 children are waiting for a sponsor</h1>
+    <p data-i18n="spon.hero.sub">For $50–100/month, you provide a child with a loving home, education, healthcare, and belonging. You'll receive a photo, a letter, and personal updates.</p>
   </div>
 </section>
 
 <section style="background:#fff;">
   <div class="inner">
-    <div class="eyebrow" data-reveal>How It Works</div>
-    <h2 class="section-title" data-reveal>Simple, direct, meaningful</h2>
+    <div class="eyebrow" data-reveal data-i18n="spon.how.eyebrow">How It Works</div>
+    <h2 class="section-title" data-reveal><span data-i18n="spon.how.title">Simple, direct, meaningful</span></h2>
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:64px;" data-reveal>
       <div style="text-align:center;padding:28px 20px;">
         <div style="font-size:2.4rem;font-weight:800;color:var(--green);margin-bottom:12px;">01</div>
@@ -114,15 +122,15 @@
         <p style="font-family:-apple-system,sans-serif;font-size:13px;color:var(--text-soft);line-height:1.6;">Receive personalized updates each Fall and Spring about your sponsored child's life at the Finca.</p>
       </div>
     </div>
-    <div class="eyebrow" data-reveal>Meet the Children</div>
-    <h2 class="section-title" data-reveal>Children currently in need of sponsorship</h2>
+    <div class="eyebrow" data-reveal data-i18n="spon.meet.eyebrow">Meet the Children</div>
+    <h2 class="section-title" data-reveal><span data-i18n="spon.meet.title">Children currently in need of sponsorship</span></h2>
     <p class="section-sub" data-reveal>To maintain our children's privacy, only first initials are used publicly. Full profiles and photos are shared with sponsors upon confirmation of sponsorship.</p>
     <div class="children-grid">
       <div class="child-card" data-reveal data-reveal-delay="1">
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/aa254751-2c71-4a95-9179-f012032bae0e/PHOTO-2025-11-07-09-45-58+2.jpg" alt="Child J." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">J.</span><span class="child-age">3 yrs · Male</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Exploring the Finca.<br>The youngest — loves playing at the campo and being given lots of attention.</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Exploring the Finca.<br>The youngest — loves playing at the campo and being given lots of attention.</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become J's Sponsor →</a>
         </div>
       </div>
@@ -130,7 +138,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/f12ac218-b6fa-44f2-afa7-1aaaecf8c1e4/PHOTO-2025-12-05-17-45-44.jpg" alt="Child I." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">I.</span><span class="child-age">12 yrs · Female</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Sports and learning about nature.<br>Loves watching movies and talking with anyone that will listen.</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Sports and learning about nature.<br>Loves watching movies and talking with anyone that will listen.</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become I's Sponsor →</a>
         </div>
       </div>
@@ -138,7 +146,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1742394336472-3YD35B4HJUDMRAMFGL5V/20250218_164459.jpg" alt="Child En." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">En.</span><span class="child-age">5 yrs · Male</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Exploring and coloring.<br>Loves talking to anyone that will listen and is a huge help to his tía.</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Exploring and coloring.<br>Loves talking to anyone that will listen and is a huge help to his tía.</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become E's Sponsor →</a>
         </div>
       </div>
@@ -146,7 +154,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1667156972128-DPBD6GG9NXBV24TQ1QVZ/PHOTO-2022-09-16-11-47-52.jpg" alt="Child Y." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">Y.</span><span class="child-age">15 yrs · Female</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Swimming and coloring.<br>Has been at the Finca since she was 1 and loves hearing stories from the past!</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Swimming and coloring.<br>Has been at the Finca since she was 1 and loves hearing stories from the past!</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become Y's Sponsor →</a>
         </div>
       </div>
@@ -154,7 +162,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1655310627806-58X2ISCBNE94JKYLPDWJ/Rixy_Mabel_Mendoza%2B_Varela2022.jpg" alt="Child R." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">R.</span><span class="child-age">11 yrs · Female</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Playing, coloring and dolls.<br>Loves the Frozen soundtrack and learning to count.</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Playing, coloring and dolls.<br>Loves the Frozen soundtrack and learning to count.</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become R's Sponsor →</a>
         </div>
       </div>
@@ -162,7 +170,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/bfdc1b0e-cc67-4782-b082-c450564f9a2f/PHOTO-2025-11-07-09-45-58.jpg" alt="Child G." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">G.</span><span class="child-age">8 yrs · Female</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Coloring, dancing and the playground.<br>Loves helping her tía and is a bundle of energy!</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Coloring, dancing and the playground.<br>Loves helping her tía and is a bundle of energy!</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become G's Sponsor →</a>
         </div>
       </div>
@@ -170,7 +178,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/14c1e101-19bc-4109-8aae-2ce57e2e45b0/20250218_164307.jpg" alt="Child W." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">W.</span><span class="child-age">15 yrs · Male</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Soccer and climbing trees.<br>Loves Bald Eagles and playing with his youngest brother.</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Soccer and climbing trees.<br>Loves Bald Eagles and playing with his youngest brother.</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become W's Sponsor →</a>
         </div>
       </div>
@@ -178,7 +186,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1742396114543-NZ9OLPDVPPQEEBYMJU97/20250218_164346.jpg" alt="Child YS." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">YS.</span><span class="child-age">7 yrs · Male</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Running and playing on the beach.<br>Will eat any snack he can find — loves a cold coca-cola!</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Running and playing on the beach.<br>Will eat any snack he can find — loves a cold coca-cola!</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become Y's Sponsor →</a>
         </div>
       </div>
@@ -186,7 +194,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1655318408922-DIJX3OLE0EXZJB59FWZA/Dunia_Mendoza_Varela.jpg" alt="Child D." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">D.</span><span class="child-age">9 yrs · Female</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Coloring and singing.<br>Favorite subjects: Art, music and learning her numbers.</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Coloring and singing.<br>Favorite subjects: Art, music and learning her numbers.</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become D's Sponsor →</a>
         </div>
       </div>
@@ -194,7 +202,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1742396202940-06PQBBGHZV8KFJ4XX4T6/20250218_165205.jpg" alt="Child F." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">F.</span><span class="child-age">14 yrs · Male</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Swimming, soccer and tag.<br>Loves watching movies — especially when the boys get to pick!</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Swimming, soccer and tag.<br>Loves watching movies — especially when the boys get to pick!</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become F's Sponsor →</a>
         </div>
       </div>
@@ -202,7 +210,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1742396238922-AW3UQLM7A8NJY3E9IFCD/20250218_164832.jpg" alt="Child S." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">S.</span><span class="child-age">5 yrs · Male</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Running, playing, climbing trees.<br>Often seen throwing sticks at mango trees trying to knock down a treat!</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Running, playing, climbing trees.<br>Often seen throwing sticks at mango trees trying to knock down a treat!</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become S's Sponsor →</a>
         </div>
       </div>
@@ -210,7 +218,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1742396040917-JTP1CE67CEHARPTR3COG/26DC5D83-E011-4B03-A9A4-C43DAF064A79%252B2.jpg" alt="Child C." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">C.</span><span class="child-age">4 yrs · Male</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Toy cars and soccer balls.<br>Loves adventures around the Finca and visiting our sheep.</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Toy cars and soccer balls.<br>Loves adventures around the Finca and visiting our sheep.</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become C's Sponsor →</a>
         </div>
       </div>
@@ -218,7 +226,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/1742396399139-1UNO9DE3468KA6GZS8SV/20250218_164035.jpg" alt="Child E." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">E.</span><span class="child-age">10 yrs · Male</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Climbing trees and eating mangos.<br>Wants to be a Police Officer and Painter when he grows up.</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Climbing trees and eating mangos.<br>Wants to be a Police Officer and Painter when he grows up.</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become E's Sponsor →</a>
         </div>
       </div>
@@ -226,7 +234,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/7da6ea46-b895-4419-a39f-466fcbc801b3/PHOTO-2025-11-07-09-45-58+3.jpg" alt="Child M." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">M.</span><span class="child-age">17 yrs · Female</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Animals and cuddling.<br>Loves playing with others and being around people.</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Animals and cuddling.<br>Loves playing with others and being around people.</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become M's Sponsor →</a>
         </div>
       </div>
@@ -234,7 +242,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/fe722bfc-76be-4de4-9bb7-139cbc585fbb/20250218_163912.jpg" alt="Child K." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">K.</span><span class="child-age">17 yrs · Female</span></div>
-          <p class="child-desc"><strong>Interests:</strong> Hair, shopping, makeup and sleepovers.<br>Loves sunsets and is learning to knit!</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> Hair, shopping, makeup and sleepovers.<br>Loves sunsets and is learning to knit!</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become K's Sponsor →</a>
         </div>
       </div>
@@ -242,7 +250,7 @@
         <div class="child-photo"><img src="https://images.squarespace-cdn.com/content/v1/5fd9b0d2dde7cb43cc176992/85fd052f-50c1-4f46-ac48-aed9ec081e63/20250218_164406.jpg" alt="Child D." loading="lazy"></div>
         <div class="child-info">
           <div class="child-header"><span class="child-initial">D.</span><span class="child-age">14 yrs · Male</span></div>
-          <p class="child-desc"><strong>Interests:</strong> All sports, climbing and swimming.<br>Recently learned to play guitar — a natural who can play almost any song!</p>
+          <p class="child-desc"><strong data-i18n="child.interests">Interests:</strong> All sports, climbing and swimming.<br>Recently learned to play guitar — a natural who can play almost any song!</p>
           <a href="contact.html?subject=Child+Sponsorship" class="child-btn">Become D's Sponsor →</a>
         </div>
       </div>
@@ -256,8 +264,8 @@
 </section>
 
 <div class="cta-band">
-  <h2 data-reveal>One child. One sponsor. One life changed.</h2>
-  <p data-reveal>$50/month — less than $2 a day — gives a child everything they need to thrive.</p>
+  <h2 data-reveal><span data-i18n="spon.cta.title">One child. One sponsor. One life changed.</span></h2>
+  <p data-reveal><span data-i18n="spon.cta.sub">$50/month — less than $2 a day — gives a child everything they need to thrive.</span>< — gives a child everything they need to thrive.</p>
   <div class="btns" data-reveal>
     <a href="contact.html" class="btn btn-primary btn-lg">Contact Us to Sponsor</a>
     <a href="donate.html" class="btn btn-white btn-lg">Make a Donation</a>
